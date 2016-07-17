@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
+  ~   the License. You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~   Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+  ~   an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+  ~   specific language governing permissions and limitations under the License.
+  ~
+  ~   Copyright 2016 the original author or authors.
+  ~
+  -->
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>java8-guava-collectors</artifactId>
+    <version>1.0</version>
+
+    <packaging>jar</packaging>
+
+    <name>Java 8 Guava Collectors</name>
+    <description>Java 8 collectors for the Guava collections</description>
+    <url>https://github.com/lucasweb78/java8-guava-collectors</url>
+    <inceptionYear>2016</inceptionYear>
+
+    <parent>
+        <groupId>uk.co.lucasweb</groupId>
+        <artifactId>parent-pom</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Richard Lucas</name>
+        </developer>
+    </developers>
+
+    <scm>
+        <developerConnection>scm:git:git@github.com:lucasweb78/java8-guava-collectors.git</developerConnection>
+        <connection>scm:git:git@github.com:lucasweb78/java8-guava-collectors.git</connection>
+        <url>git@github.com:lucasweb78/java8-guava-collectors</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/lucasweb78/java8-guava-collectors/issues</url>
+    </issueManagement>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <guava.version>19.0</guava.version>
+
+        <!-- test dependency versions -->
+        <assertj-core.version>3.2.0</assertj-core.version>
+        <junit.version>4.12</junit.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj-core.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
